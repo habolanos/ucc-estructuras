@@ -11,7 +11,7 @@ public class PgmAlgoritmoO1 {
          // Datos del encabezado
         String nombre = "Harold Adrian"; // Reemplaza con tu nombre
         String campus = "Campus Cali, U. Cooperativa de Colombia"; // Reemplaza con el nombre de tu campus
-        String repositorioGit = "https://github.com/habolanos/ucc-estructuras"; // Reemplaza con la URL de tu repositorio Git
+        String repositorioGit = "https://github.com/habolanos/ucc-estructuras/blob/master/sesion04/ejercicios/1-algoritmo-O1/PgmAlgoritmoO1.java"; // Reemplaza con la URL de tu repositorio Git
 
         // Obtener la fecha y hora actual
         LocalDateTime ahora = LocalDateTime.now();
@@ -30,7 +30,7 @@ public class PgmAlgoritmoO1 {
 
     public static void main(String[] args) {
         encabezadoPgm();
-        
+
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Ingrese el tamaño del array: ");
