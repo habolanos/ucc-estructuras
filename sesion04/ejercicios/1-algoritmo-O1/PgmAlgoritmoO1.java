@@ -9,9 +9,9 @@ public class PgmAlgoritmoO1 {
  
     public static void encabezadoPgm(){
          // Datos del encabezado
-        String nombre = "Harold Adrian"; // Reemplaza con tu nombre
-        String campus = "Campus Cali, U. Cooperativa de Colombia"; // Reemplaza con el nombre de tu campus
-        String repositorioGit = "https://github.com/habolanos/ucc-estructuras/blob/master/sesion04/ejercicios/1-algoritmo-O1/PgmAlgoritmoO1.java"; // Reemplaza con la URL de tu repositorio Git
+        String nombre = "Harold Adrian";
+        String campus = "Campus Cali, U. Cooperativa de Colombia";
+        String repositorioGit = "https://github.com/habolanos/ucc-estructuras/blob/master/sesion04/ejercicios/1-algoritmo-O1/PgmAlgoritmoO1.java";
 
         // Obtener la fecha y hora actual
         LocalDateTime ahora = LocalDateTime.now();
@@ -19,14 +19,13 @@ public class PgmAlgoritmoO1 {
         String fechaHora = ahora.format(formateador);
 
         // Imprimir el encabezado
-        System.out.println("----------------------------------------");
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Campus: " + campus);
-        System.out.println("Fecha y hora: " + fechaHora);
-        System.out.println("Repositorio Git: " + repositorioGit);
-        System.out.println("----------------------------------------");
-        System.out.println(); // Línea en blanco para separar el encabezado de los datos
-    }
+        System.out.println("+----------------------------------------");
+        System.out.println("| 👤 Nombre: " + nombre);
+        System.out.println("| 🎓 Campus: " + campus);
+        System.out.println("| 📅 Fecha y hora: " + fechaHora);
+        System.out.println("| 📂 Repositorio Git: " + repositorioGit);
+        System.out.println("+----------------------------------------");
+        System.out.println();
 
     public static void main(String[] args) {
         encabezadoPgm();
@@ -42,6 +41,6 @@ public class PgmAlgoritmoO1 {
             arr[i] = scanner.nextInt();
         }
  
-        System.out.println("El primer elemento del array es: " + obtenerPrimerElemento(arr));
+        System.out.println("🏁 El primer elemento del array es: " + obtenerPrimerElemento(arr));
     }
 }
