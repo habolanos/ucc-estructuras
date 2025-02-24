@@ -26,7 +26,7 @@ public class PgmAlgoritmoO1 {
         System.out.println("| 📂 Repositorio Git: " + repositorioGit);
         System.out.println("+----------------------------------------");
         System.out.println();
-
+    }  
     public static void main(String[] args) {
         encabezadoPgm();
 
