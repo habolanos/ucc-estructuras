@@ -37,13 +37,13 @@ Una pila es una estructura de datos **lineal** que permite insertar y eliminar e
 
 **Código Fuente en C++**
 ```cpp
-# include &lt;iostream&gt;
-# include &lt;stack&gt;
+# include <iostream>
+# include <stack>
 
 using namespace std;
 
 int main() {
-stack&lt;string&gt; historial;
+stack<string> historial;
 historial.push("www.google.com");
 historial.push("www.github.com");
 historial.push("www.stackoverflow.com");
@@ -63,13 +63,13 @@ return 0;
 
 **Código Fuente en C++**
 ```cpp
-# include &lt;iostream&gt;
-# include &lt;stack&gt;
+# include <iostream>
+# include <stack>
 
 using namespace std;
 
 bool validarExpresion(string expr) {
-stack&lt;char&gt; pila;
+stack<char> pila;
 for (char c : expr) {
 if (c == '(') {
 pila.push(c);
@@ -100,13 +100,13 @@ return 0;
 
 **Código Fuente en C++**
 ```cpp
-# include &lt;iostream&gt;
-# include &lt;stack&gt;
+# include <iostream>
+# include <stack>
 
 using namespace std;
 
 int main() {
-stack&lt;string&gt; acciones;
+stack<string> acciones;
 acciones.push("Escribir 'Hola'");
 acciones.push("Agregar negrita");
 acciones.push("Insertar imagen");
@@ -126,13 +126,13 @@ return 0;
 
 **Código Fuente en C++**
 ```cpp
-# include &lt;iostream&gt;
-# include &lt;stack&gt;
+# include <iostream>
+# include <stack>
 
 using namespace std;
 
 int evaluarPostfija(string expr) {
-stack&lt;int&gt; pila;
+stack<int> pila;
 for (char c : expr) {
 if (isdigit(c)) {
 pila.push(c - '0');
@@ -163,13 +163,13 @@ return 0;
 
 **Código Fuente en C++**
 ```cpp
-# include &lt;iostream&gt;
-# include &lt;stack&gt;
+# include <iostream>
+# include <stack>
 
 using namespace std;
 
 void factorial(int n) {
-stack&lt;int&gt; pila;
+stack<int> pila;
 int resultado = 1;
 for (int i = n; i > 1; i--) {
 pila.push(i);
