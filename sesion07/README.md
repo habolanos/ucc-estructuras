@@ -38,31 +38,19 @@ Una pila es una estructura de datos **lineal** que permite insertar y eliminar e
 **Código Fuente en C++**
 ```cpp
 # include &lt;iostream&gt;
-
 # include &lt;stack&gt;
 
 using namespace std;
 
-&nbsp;
-
 int main() {
-
 stack&lt;string&gt; historial;
-
 historial.push("www.google.com");
-
 historial.push("www.github.com");
-
 historial.push("www.stackoverflow.com");
-
 cout << "Página actual: " << historial.top() << endl;
-
 historial.pop();
-
 cout << "Retrocediendo... Ahora en: " << historial.top() << endl;
-
 return 0;
-
 }
 ```
 ## Ejercicio 2: Validación de Expresiones Matemáticas
@@ -76,53 +64,30 @@ return 0;
 **Código Fuente en C++**
 ```cpp
 # include &lt;iostream&gt;
-
 # include &lt;stack&gt;
 
 using namespace std;
 
-&nbsp;
-
 bool validarExpresion(string expr) {
-
 stack&lt;char&gt; pila;
-
 for (char c : expr) {
-
 if (c == '(') {
-
 pila.push(c);
-
 } else if (c == ')') {
-
 if (pila.empty()) return false;
-
 pila.pop();
-
 }
-
 }
-
 return pila.empty();
-
 }
-
-&nbsp;
 
 int main() {
-
 string expresion = "(5+3)\*(2+(4-1))";
-
 if (validarExpresion(expresion))
-
 cout << "Expresión válida." << endl;
-
 else
-
 cout << "Expresión inválida." << endl;
-
 return 0;
-
 }
 ```
 ## Ejercicio 3: Sistema de Deshacer/Rehacer en un Editor de Texto
@@ -136,31 +101,19 @@ return 0;
 **Código Fuente en C++**
 ```cpp
 # include &lt;iostream&gt;
-
 # include &lt;stack&gt;
 
 using namespace std;
 
-&nbsp;
-
 int main() {
-
 stack&lt;string&gt; acciones;
-
 acciones.push("Escribir 'Hola'");
-
 acciones.push("Agregar negrita");
-
 acciones.push("Insertar imagen");
-
 cout << "Última acción: " << acciones.top() << endl;
-
 acciones.pop();
-
 cout << "Deshacer... Ahora la última acción es: " << acciones.top() << endl;
-
 return 0;
-
 }
 ```
 ## Ejercicio 4: Evaluación de Expresiones Postfijas
@@ -174,53 +127,30 @@ return 0;
 **Código Fuente en C++**
 ```cpp
 # include &lt;iostream&gt;
-
 # include &lt;stack&gt;
 
 using namespace std;
 
-&nbsp;
-
 int evaluarPostfija(string expr) {
-
 stack&lt;int&gt; pila;
-
 for (char c : expr) {
-
 if (isdigit(c)) {
-
 pila.push(c - '0');
-
 } else {
-
 int b = pila.top(); pila.pop();
-
 int a = pila.top(); pila.pop();
-
 if (c == '+') pila.push(a + b);
-
 else if (c == '-') pila.push(a - b);
-
 else if (c == '\*') pila.push(a \* b);
-
 else if (c == '/') pila.push(a / b);
-
 }
-
 }
-
 return pila.top();
-
 }
-
-&nbsp;
 
 int main() {
-
 cout << evaluarPostfija("23+5\*") << endl; // Output: 25
-
 return 0;
-
 }
 ```
 ## Ejercicio 5: Control de Llamadas Recursivas
@@ -234,45 +164,27 @@ return 0;
 **Código Fuente en C++**
 ```cpp
 # include &lt;iostream&gt;
-
 # include &lt;stack&gt;
 
 using namespace std;
 
-&nbsp;
-
 void factorial(int n) {
-
 stack&lt;int&gt; pila;
-
 int resultado = 1;
-
 for (int i = n; i > 1; i--) {
-
 pila.push(i);
-
 }
 
 while (!pila.empty()) {
-
 resultado \*= pila.top();
-
 pila.pop();
-
 }
-
 cout << "Factorial: " << resultado << endl;
-
 }
-
-&nbsp;
 
 int main() {
-
 factorial(5); // Output: 120
-
 return 0;
-
 }
 ```
 **Conclusión**
