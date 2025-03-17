@@ -36,7 +36,7 @@ Una pila es una estructura de datos **lineal** que permite insertar y eliminar e
 - **Para** navegar de manera eficiente sin perder el historial de navegación.
 
 **Código Fuente en C++**
-
+```cpp
 # include &lt;iostream&gt;
 
 # include &lt;stack&gt;
@@ -64,7 +64,7 @@ cout << "Retrocediendo... Ahora en: " << historial.top() << endl;
 return 0;
 
 }
-
+```
 ## Ejercicio 2: Validación de Expresiones Matemáticas
 
 **Historia de Usuario**
@@ -74,7 +74,7 @@ return 0;
 - **Para** evitar errores de sintaxis en los cálculos.
 
 **Código Fuente en C++**
-
+```cpp
 # include &lt;iostream&gt;
 
 # include &lt;stack&gt;
@@ -124,7 +124,7 @@ cout << "Expresión inválida." << endl;
 return 0;
 
 }
-
+```
 ## Ejercicio 3: Sistema de Deshacer/Rehacer en un Editor de Texto
 
 **Historia de Usuario**
@@ -134,7 +134,7 @@ return 0;
 - **Para** corregir errores sin perder información importante.
 
 **Código Fuente en C++**
-
+```cpp
 # include &lt;iostream&gt;
 
 # include &lt;stack&gt;
@@ -162,7 +162,7 @@ cout << "Deshacer... Ahora la última acción es: " << acciones.top() << endl;
 return 0;
 
 }
-
+```
 ## Ejercicio 4: Evaluación de Expresiones Postfijas
 
 **Historia de Usuario**
@@ -172,7 +172,7 @@ return 0;
 - **Para** implementar un calculador eficiente.
 
 **Código Fuente en C++**
-
+```cpp
 # include &lt;iostream&gt;
 
 # include &lt;stack&gt;
@@ -222,7 +222,7 @@ cout << evaluarPostfija("23+5\*") << endl; // Output: 25
 return 0;
 
 }
-
+```
 ## Ejercicio 5: Control de Llamadas Recursivas
 
 **Historia de Usuario**
@@ -232,7 +232,7 @@ return 0;
 - **Para** evitar desbordamientos de memoria y optimizar rendimiento.
 
 **Código Fuente en C++**
-
+```cpp
 # include &lt;iostream&gt;
 
 # include &lt;stack&gt;
@@ -274,7 +274,7 @@ factorial(5); // Output: 120
 return 0;
 
 }
-
+```
 **Conclusión**
 
 Las pilas son estructuras esenciales en la programación. Se utilizan en múltiples aplicaciones, como navegadores, compiladores y sistemas de control de procesos. Su eficiencia y simplicidad las hacen ideales para escenarios que requieren acceso **LIFO**.
