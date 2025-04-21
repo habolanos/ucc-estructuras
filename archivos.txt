@@ -1,0 +1,13 @@
+
+    Directory: C:\Users\hadrian\ucc-estructuras
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----        21/04/2025 9:07 a. m.                .vscode
+d----        21/04/2025 9:07 a. m.                sesion04
+d----        21/04/2025 9:07 a. m.                sesion07
+d----        21/04/2025 9:07 a. m.                sesion09
+-a---        21/04/2025 9:07 a. m.            326 .gitignore
+-a---        21/04/2025 9:07 a. m.              0 archivos.txt
+-a---        21/04/2025 9:07 a. m.             69 README.md
+
